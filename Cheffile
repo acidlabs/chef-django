@@ -3,10 +3,11 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'openssl'
 cookbook 'apt'
-cookbook 'git'
 cookbook 'build-essential'
+cookbook 'git'
+cookbook 'openssl'
+cookbook 'ohai'
+cookbook 'runit'
 cookbook 'postgresql', git: 'git://github.com/patientslikeme/chef-postgresql.git'
-# cookbook 'rvm',
-#   :git => 'git://github.com/fnichol/chef-rvm.git', :ref => 'v0.9.0'
+cookbook 'nginx', git: 'git://github.com/gchef/nginx-cookbook.git', ref: 'v2.7.1'
