@@ -16,3 +16,10 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# Chef
+/cookbooks/*
+/nodes/*.json
+/roles/*.json
+/data_bags/*.json
+/tmp/*
