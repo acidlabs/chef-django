@@ -1,0 +1,31 @@
+{
+  "run_list": [
+    "recipe[sudo]",
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[git]",
+    "recipe[openssl]",
+    "recipe[ruby]",
+    "recipe[postgresql::server]"
+  ],
+
+  "authorization": {
+    "sudo": {
+      "groups":       ["admin", "wheel", "sysadmin"],
+      "users":        ["ubuntu"],
+      "passwordless": true
+    }
+  },
+
+  "languages": {
+    "ruby": {
+      "default_version": "1.9.1"
+    }
+  },
+
+  "postgresql": {
+    "password": {
+      "postgres": "3db9007f5a"
+    }
+  }
+}
