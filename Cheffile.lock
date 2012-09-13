@@ -16,12 +16,11 @@ SITE
     yum (0.8.0)
 
 GIT
-  remote: git://github.com/patientslikeme/chef-postgresql.git
+  remote: git://github.com/phlipper/chef-postgresql.git
   ref: master
-  sha: 287ad59026008dbcb5b7733155e1340a112aa7e7
+  sha: d235ece0ccb90aa88aa0d80246c9253437b11e2d
   specs:
-    postgresql (0.99.4)
-      openssl (>= 0.0.0)
+    postgresql (0.4.0)
 
 DEPENDENCIES
   apt (>= 0)

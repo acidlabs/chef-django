@@ -43,6 +43,8 @@ end
 
 action :before_migrate do
 
+  raise "#{::File.join(new_resource.path, "requirements.txt")}"
+
   if new_resource.requirements.nil?
     # look for requirements.txt files in common locations
     [
