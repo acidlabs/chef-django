@@ -68,7 +68,6 @@ GEM
     net-ssh-multi (1.1)
       net-ssh (>= 2.1.4)
       net-ssh-gateway (>= 0.99.0)
-    nokogiri (1.5.5)
     ohai (6.14.0)
       ipaddress
       mixlib-cli
@@ -100,8 +99,8 @@ GEM
       net-scp (>= 1.0.2)
       net-ssh (>= 2.0.19)
       virtualbox (>= 0.5.3)
-    virtualbox (0.5.4)
-      nokogiri (>= 1.4.1)
+    virtualbox (0.8.3)
+      ffi (~> 0.6.3)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -109,6 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (= 2.13.3)
+  chef
   ffi (= 0.6.3)
   knife-solo (= 0.0.13)
   librarian (= 0.0.24)

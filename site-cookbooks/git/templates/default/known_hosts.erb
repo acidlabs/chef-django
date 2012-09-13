@@ -1,0 +1,5 @@
+<% known_hosts = node['git']['github']['known_hosts'] %>
+
+<% known_hosts.each do |host| %>
+  <%= host %>
+<% end %>

@@ -22,4 +22,5 @@ doc/
 /nodes/*.json
 /roles/*.json
 /data_bags/*.json
+/site-cookbooks/main/*
 /tmp/*

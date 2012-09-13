@@ -1,0 +1,10 @@
+<% user   = node['git']['user'] %>
+<% github = node['git']['github'] %>
+
+[user]
+  name  = <%= user['name'] %>
+  email = <%= user['email'] %>
+
+[github]
+  username = <%= github['username'] %>
+  token    = <%= github['token'] %>
