@@ -139,7 +139,7 @@ def run_deploy(force = false)
       ([new_resource]+new_resource.sub_resources).each do |res|
         cmd = res.restart_command
         if cmd.is_a? Proc
-          provider = Chef::Platform.provider_for_resource(res, action( force ? :force_deploy : :deploy ))
+          provider = Chef::Platform.provider_for_resource(res, ( force ? [:force_deploy] : [:deploy] ))
           provider.load_current_resource
           provider.instance_eval(&cmd)
         elsif cmd && !cmd.empty?
